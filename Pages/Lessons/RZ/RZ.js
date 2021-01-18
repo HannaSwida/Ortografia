@@ -1,12 +1,9 @@
 import * as React from 'react';
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import Rules from "./Rules";
-import {COLORS} from "../../../Colors";
-import SmallRoundButton from "../../../Components/SmallRoundButton";
 import BigRoundButton from "../../../Components/BigRoundButton";
 
-//ADAM: dla kazdego sz czy z etc kopiuj to we własnych folderach, to np jest w RZ. kazdy folder musi miec oddzielnie swoje
-//rules
+
 
 function RZ({navigation}) {
   return (
