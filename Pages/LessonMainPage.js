@@ -16,38 +16,41 @@ function LessonMainPage({navigation}) {
           lessonTitle="RZ czy Ż?"/>
         <SmallRoundButton
           navigation={navigation}
+          onPress={() => navigation.navigate('SZ')}
           style={styles.button}
+          lessonType="SZ"
           lessonTitle="SZ czy RZ?"/>
       </View>
       <View style={styles.container}>
         <SmallRoundButton
           navigation={navigation}
+          onPress={() => navigation.navigate('Nasal')}
+          style={styles.button}
+          lessonType="Nasal"
           style={styles.button}
           lessonTitle="ON, EN czy Ą, Ę?"/>
         <SmallRoundButton
           navigation={navigation}
+          onPress={() => navigation.navigate('Soft')}
           style={styles.button}
-          lessonTitle="NI czy Ń?"/>
+          lessonType="Soft"
+          style={styles.button}
+          lessonTitle="Ń, Ś, Ź, Ć, DŹ"/>
       </View>
       <View style={styles.container}>
         <SmallRoundButton
           navigation={navigation}
+          onPress={() => navigation.navigate('U')}
           style={styles.button}
+          lessonType="U"
+          style={styles.button}
+          lessonTitle="U czy Ó?"/>
+        <SmallRoundButton
+          navigation={navigation}
+          onPress={() => navigation.navigate('CH')}
+          style={styles.button}
+          lessonType="CH"
           lessonTitle="CH czy H?"/>
-        <SmallRoundButton
-          navigation={navigation}
-          style={styles.button}
-          lessonTitle="CI czy Ć"/>
-      </View>
-      <View style={styles.container}>
-        <SmallRoundButton
-          navigation={navigation}
-          style={styles.button}
-          lessonTitle="SI czy Ś"/>
-        <SmallRoundButton
-          navigation={navigation}
-          style={styles.button}
-          lessonTitle="Inne"/>
       </View>
     </View>
   );

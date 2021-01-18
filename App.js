@@ -6,8 +6,12 @@ import LessonMainPage from "./Pages/LessonMainPage";
 import ExamMainPage from "./Pages/ExamMainPage";
 import PickAnswer from "./Pages/Exercises/PickAnswer";
 import {COLORS} from "./Colors";
-import RZ from "./Pages/Lessons/RZ/RZ";
-
+import RZ from "./Pages/Lessons/RZ/RZ.js";
+import SZ from "./Pages/Lessons/SZ/SZ.js";
+import CH from "./Pages/Lessons/CH/CH.js";
+import Nasal from "./Pages/Lessons/Nasal/Nasal.js";
+import Soft from "./Pages/Lessons/Soft/Soft.js";
+import U from "./Pages/Lessons/U/U.js";
 // ADAM : patrz komentarze
 function HomeScreen({ navigation }) {
   return (
@@ -48,6 +52,34 @@ function RZScreen({navigation}) {
     <RZ navigation={navigation}/>
   );
 }
+
+function SZScreen({navigation}) {
+  return (
+    <SZ navigation={navigation}/>
+  );
+}
+function NasalScreen({navigation}) {
+  return (
+    <Nasal navigation={navigation}/>
+  );
+}
+function CHScreen({navigation}) {
+  return (
+    <CH navigation={navigation}/>
+  );
+}
+function UScreen({navigation}) {
+  return (
+    <U navigation={navigation}/>
+  );
+}
+function SoftScreen({navigation}) {
+  return (
+    <Soft navigation={navigation}/>
+  );
+}
+
+
 function PickAnswerScreen({route, navigation}) {
   return (
     <PickAnswer route= {route} navigation={navigation}/>
@@ -63,6 +95,11 @@ function App() {
         <Stack.Screen name="Lesson" component={LessonScreen} />
         <Stack.Screen name="Exam" component={ExamScreen} />
         <Stack.Screen name="RZ" component={RZScreen} />
+        <Stack.Screen name="SZ" component={SZScreen} />
+        <Stack.Screen name="Nasal" component={NasalScreen} />
+        <Stack.Screen name="Soft" component={SoftScreen} />
+        <Stack.Screen name="U" component={UScreen} />
+        <Stack.Screen name="CH" component={CHScreen} />
         <Stack.Screen name="PickAnswer" component={PickAnswerScreen} />
       </Stack.Navigator>
     </NavigationContainer>
