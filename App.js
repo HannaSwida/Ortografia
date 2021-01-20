@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {View, Text, Button, TouchableOpacity, StyleSheet} from 'react-native';
+import {View, Text, Button,Image, TouchableOpacity, StyleSheet} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import LessonMainPage from "./Pages/LessonMainPage";
@@ -12,11 +12,14 @@ import CH from "./Pages/Lessons/CH/CH.js";
 import Nasal from "./Pages/Lessons/Nasal/Nasal.js";
 import Soft from "./Pages/Lessons/Soft/Soft.js";
 import U from "./Pages/Lessons/U/U.js";
+import Logo from './assets/LOGO.png'
+import Giraffe from './assets/giraffe.png'
+
 // ADAM : patrz komentarze
 function HomeScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Ortografia!</Text>
+      <Image source={Logo} />
       <TouchableOpacity
         style={styles.button}
         onPress={() => navigation.navigate('Lesson')}
@@ -29,6 +32,7 @@ function HomeScreen({ navigation }) {
       >
         <Text>TEST</Text>
       </TouchableOpacity>
+      <Image source={Giraffe} />
     </View>
   );
 }

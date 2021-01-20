@@ -30,7 +30,6 @@ const styles = StyleSheet.create({
       height: '140%',
       alignItems: 'flex-end',
       flexDirection: 'column',
-      backgroundColor: '#e1f0ef',
     },
     button: {
       alignSelf: 'flex-end',

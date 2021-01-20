@@ -1,6 +1,7 @@
 import * as React from 'react';
-import {Button, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {Button, Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import SmallRoundButton from "../Components/SmallRoundButton";
+import stars from "../assets/stars.png";
 
 //ADAM " rób wszystko wg RZ czy z
 function LessonMainPage({navigation}) {
@@ -52,6 +53,8 @@ function LessonMainPage({navigation}) {
           lessonType="CH"
           lessonTitle="CH czy H?"/>
       </View>
+            <Image source={stars} />
+
     </View>
   );
 }

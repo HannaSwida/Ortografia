@@ -4,10 +4,13 @@ import AnswerButton from "../../Components/AnswerButton";
 import BadAnswerButton from "../../Components/BadAnswerButton";
 import BigRoundButton from "../../Components/BigRoundButton";
 import {COLORS} from "../../Colors";
+import SmallRoundButton from "../../Components/SmallRoundButton";
+import TextInput from "react-native-web/dist/exports/TextInput";
 
-function PickAnswer({navigation, route}) {
+function InputAnswer({navigation, route}) {
   const [correct, setCorrect] = useState(true);
   const {rules, badAns, goodAns, word, hiddenWord} = route.params;
+  const [value, onChangeText] = React.useState('Useless Placeholder');
 
 
   return (
@@ -15,24 +18,14 @@ function PickAnswer({navigation, route}) {
       <Text style={styles.title}>{rules}</Text>
       <Text style={styles.subtitle}>Wybierz poprawną odpowiedź!</Text>
       <Text style={styles.word}>{hiddenWord}</Text>
-      <View style={styles.buttons}>
-       <AnswerButton answer={goodAns} isCorrect={true}/>
-      <BadAnswerButton answer={badAns}/>
-      </View>
+    <TextInput
+      style={{ height: 40, borderColor: 'gray', borderWidth: 1 }}
+      onChangeText={text => onChangeText(text)}
+      value={value}
+    />
       {correct && <View style={styles.correct}>
         <Text style={styles.correctAns}>Brawo, to dobra odpowiedź!</Text>
-        <BigRoundButton
-          navigation={navigation}
-          onPress={() => navigation.navigate('RZ')}
-          style={styles.button}
-          lessonType="PickAnswer"
-          lessonTitle="Sprawdź wiedzę!"
-          rules="Rz czy ż?"
-          word="Rycefsdfdsfsdrz"
-          hiddenWord="Rsdfsfyce_"
-          badAns="ż"
-          goodAns="rz"
-        />
+        <SmallRoundButton lessonTitle={"Wróć do lekcji"} rules={'x'} lessonType={"Lesson"}/>
       </View>}
     </View>
   );
@@ -44,6 +37,7 @@ const styles = StyleSheet.create({
       height:'1000%',
       alignItems: 'center',
       flexDirection: 'column',
+      backgroundColor: '#e1f0ef',
     },
     notClicked: {
       display: "none",
@@ -87,4 +81,4 @@ const styles = StyleSheet.create({
   }
 );
 
-export default PickAnswer;
+export default InputAnswer;
