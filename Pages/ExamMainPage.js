@@ -16,7 +16,7 @@ function ExamMainPage({navigation}) {
           navigation={navigation}
           style={styles.button}
           lessonType="PickAnswer"
-          lessonTitle="Sprawdź wiedzę!"
+          lessonTitle="RZ czy Ż?"
           rules="Rz czy ż?"
           word="Rycerz"
           hiddenWord="Ryce_"
@@ -24,62 +24,62 @@ function ExamMainPage({navigation}) {
           goodAns="rz"
         />
         <BigRoundButton
-        navigation={navigation}
-        style={styles.button}
-        lessonType="PickAnswer"
-        lessonTitle="Sprawdź wiedzę!"
-        rules ="SZ czy RZ?"
-        word= "Krzak"
-        hiddenWord="K_ak"
-        badAns = "SZ"
-        goodAns = "RZ"
-      />
+          navigation={navigation}
+          style={styles.button}
+          lessonType="PickAnswer"
+          lessonTitle="SZ czy RZ?"
+          rules="SZ czy RZ?"
+          word="Krzak"
+          hiddenWord="K_ak"
+          badAns="SZ"
+          goodAns="RZ"
+        />
       </View>
       <View style={styles.container}>
-         <BigRoundButton
+        <BigRoundButton
+          navigation={navigation}
+          style={styles.button}
+          lessonType="PickAnswer"
+          lessonTitle="ON, EN czy Ą, Ę?"
+          rules="ON, EN czy Ą, Ę?"
+          word="Mądry"
+          hiddenWord="M_dry"
+          badAns="ON"
+          goodAns="Ą"
+        /><BigRoundButton
         navigation={navigation}
         style={styles.button}
         lessonType="PickAnswer"
-        lessonTitle="Sprawdź wiedzę!"
-        rules ="ON, EN czy Ą, Ę??"
-        word= "Mądry"
-        hiddenWord="M_dry"
-        badAns = "ON"
-        goodAns = "Ą"
-      /> <BigRoundButton
-        navigation={navigation}
-        style={styles.button}
-        lessonType="PickAnswer"
-        lessonTitle="Sprawdź wiedzę!"
-        rules ="Ń, Ś, Ź, Ć czy DŹ?"
-        word= "Ślimak"
+        lessonTitle="Ń, Ś, Ź, Ć czy DŹ?"
+        rules="Ń, Ś, Ź, Ć czy DŹ?"
+        word="Ślimak"
         hiddenWord="_limak"
-        badAns = "Ź"
-        goodAns = "Ś"
-      />
-      </View>
+        badAns="Ź"
+        goodAns="Ś"
+      /></View>
       <View style={styles.container}>
-         <BigRoundButton
-        navigation={navigation}
-        style={styles.button}
-        lessonType="PickAnswer"
-        lessonTitle="Sprawdź wiedzę!"
-        rules ="U czu Ó?"
-        word= "Miód"
-        hiddenWord="Mi_d"
-        badAns = "U"
-        goodAns = "Ó"
-      /> <BigRoundButton
-        navigation={navigation}
-        style={styles.button}
-        lessonType="PickAnswer"
-        lessonTitle="Sprawdź wiedzę!"
-        rules ="CH czy H?"
-        word= "Huśtawka"
-        hiddenWord="_uśtawka"
-        badAns = "CH"
-        goodAns = "H"
-      />
+        <BigRoundButton
+          navigation={navigation}
+          style={styles.button}
+          lessonType="PickAnswer"
+          lessonTitle="U czu Ó?"
+          rules="U czu Ó?"
+          word="Miód"
+          hiddenWord="Mi_d"
+          badAns="U"
+          goodAns="Ó"
+        />
+        <BigRoundButton
+          navigation={navigation}
+          style={styles.button}
+          lessonType="PickAnswer"
+          lessonTitle="CH czy H?"
+          rules="CH czy H?"
+          word="Huśtawka"
+          hiddenWord="_uśtawka"
+          badAns="CH"
+          goodAns="H"
+        />
       </View>
       <Image source={rainbow}/>
     </View>
