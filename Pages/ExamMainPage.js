@@ -46,10 +46,17 @@ function ExamMainPage({navigation}) {
         badAns = "ą"
         goodAns = "om"
       />
-        <SmallRoundButton
-          navigation={navigation}
-          style={styles.button}
-          lessonTitle="NI czy Ń?"/>
+        <BigRoundButton
+        navigation={navigation}
+        style={styles.button}
+        lessonType="PickAnswer"
+        lessonTitle="Ę czy en/em?"
+        rules ="Ę czy em"
+        word= "Rozumiem"
+        hiddenWord="Rozumi_"
+        badAns = "ę"
+        goodAns = "em"
+      />
       </View>
       <View style={styles.container}>
         <SmallRoundButton

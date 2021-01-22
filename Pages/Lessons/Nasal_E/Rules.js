@@ -8,18 +8,19 @@ function Rules() {
   return (
     <View style={styles.main}>
       <Text
-        style={styles.title}>Ą czy OM?</Text>
+        style={styles.title}>Ę czy EM?</Text>
       <Text
-        style={styles.subtitle}>Kiedy piszemy Ą:</Text>
+        style={styles.subtitle}>Kiedy piszemy Ę:</Text>
       <Text style={styles.text}>
-        >Na końcu rzeczowników rodzaju żeńskiego w narzędniku liczby pojedynczej: drogą, nogą, stacją{"\n"}
-        >Na końcu czsaowników trzeciej osoby liczby mnogiej: idą, robią, piszą{"\n"}
+        >Na końcu rzeczowników rodzaju żeńskiego w bierniku liczby pojedynczej: drogę, nogę, stację{"\n"}
+        >Na końcu czasowników pierwszej osoby liczby mnogiej: idę, robię, piszę{"\n"}
         >W czasownikach w czasie przeszłym przed literą "ł": wziąłem, odpocząłem{"\n"}
       </Text>
       <Text
-        style={styles.subtitle}>Kiedy piszemy OM:</Text>
+        style={styles.subtitle}>Kiedy piszemy EM albo EN:</Text>
       <Text style={styles.text}>
-        >Na końcu rzeczowników w celowniku liczby mnogiej: widokom, drogom, nogom, książkom{"\n"}
+        >Na końcu czasowników: umiem, jem, wiem, powiem, śmiem{"\n"}
+        >W wyrazach obcych: elektroencefalograf
 
       </Text>
     </View>

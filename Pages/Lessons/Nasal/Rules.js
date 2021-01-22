@@ -13,13 +13,14 @@ function Rules() {
         style={styles.subtitle}>Kiedy piszemy Ą:</Text>
       <Text style={styles.text}>
         >Na końcu rzeczowników rodzaju żeńskiego w narzędniku liczby pojedynczej: drogą, nogą, stacją{"\n"}
-        >Na końcu czsaowników trzeciej osoby liczby mnogiej: idą, robią, piszą{"\n"}
+        >Na końcu czasowników trzeciej osoby liczby mnogiej: idą, robią, piszą{"\n"}
         >W czasownikach w czasie przeszłym przed literą "ł": wziąłem, odpocząłem{"\n"}
       </Text>
       <Text
         style={styles.subtitle}>Kiedy piszemy OM:</Text>
       <Text style={styles.text}>
         >Na końcu rzeczowników w celowniku liczby mnogiej: widokom, drogom, nogom, książkom{"\n"}
+        >W wyrazach obcych: komputer, tombola
 
       </Text>
     </View>
