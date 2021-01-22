@@ -60,7 +60,7 @@ function LessonMainPage({navigation}) {
           style={styles.button}
           lessonType="Soft"
           style={styles.button}
-          lessonTitle="Ń, Ś, Ź, Ć, DŹ"/>
+          lessonTitle="Ń, Ś, Ź, Ć, Dź"/>
       </View>
       <Image source={stars} />
 

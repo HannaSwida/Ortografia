@@ -59,6 +59,8 @@ function ExamMainPage({navigation}) {
         goodAns = "em"
       />
       </View>
+      
+      
       <View style={styles.container}>
         <BigRoundButton
           navigation={navigation}
@@ -83,7 +85,20 @@ function ExamMainPage({navigation}) {
           goodAns="H"
         />
       </View>
-      <Image source={rainbow}/>
+      <View style={styles.container}>
+        <BigRoundButton
+          navigation={navigation}
+          style={styles.button}
+          lessonType="PickAnswer"
+          lessonTitle="Ń, Ś, Ć, Ź, Dź"
+          rules ="Dź czy dzi?"
+          word= "dziwny"
+          hiddenWord="_wny"
+          badAns = "dź"
+          goodAns = "dzi"
+        />
+        <Image source={rainbow}/>
+      </View>
     </View>
   );
 }

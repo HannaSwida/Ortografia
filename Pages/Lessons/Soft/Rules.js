@@ -8,22 +8,18 @@ function Rules() {
   return (
     <View style={styles.main}>
       <Text
-        style={styles.title}>RZ czy Ż?</Text>
+        style={styles.title}>Spółgłoski nosowe</Text>
       <Text
-        style={styles.subtitle}>Kiedy piszemy RZ:</Text>
+        style={styles.subtitle}>Kiedy piszemy Ń, Ś, Ć, Ź, Dź:</Text>
       <Text style={styles.text}>
-        >W wyrazach wymienia się na "r",{"\n"}
-        >Rz piszemy w zakończeniach wyrazów: -arz, -erz (mierz mistrz){"\n"}
-        >Rz piszemy po spółgłoskach: b, p, d, t, g, k, ch, j, w{"\n"}
+        >Na końcu wyrazów w mianowniku: dzień, ktoś, gąłąź{"\n"}
+        >Przed spółgłoskami, np. śnieg, źródło, ćma, źle{"\n"}
       </Text>
       <Text
-        style={styles.subtitle}>Kiedy piszemy Ż:</Text>
+        style={styles.subtitle}>Kiedy piszemy ni, si, ci, zi, dzi:</Text>
       <Text style={styles.text}>
-        >Ż piszemy po literach: l, ł, r, n,,{"\n"}
-        >Ż piszemy, gdy wymienia się w innych formach tego samego wyrazu lub w innych wyrazach na: g, dz, h, z, ź, s,
-        np.:{"\n"}
-        książka - księga,{"\n"}
-        wstążka - wstęga,{"\n"}
+        >Przed samogłoskami, np. siano, ciastko, dziura, niebo{"\n"}
+        >Kiedy głoska tworzy sylabę, np. siła, dziwny, zima, niski{"\n"}
       </Text>
     </View>
   );
