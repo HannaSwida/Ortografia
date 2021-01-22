@@ -32,11 +32,11 @@ function LessonMainPage({navigation}) {
           lessonTitle="Ą czy OM?"/>
         <SmallRoundButton
           navigation={navigation}
-          onPress={() => navigation.navigate('Soft')}
+          onPress={() => navigation.navigate('Nasal_E')}
           style={styles.button}
-          lessonType="Soft"
+          lessonType="Nasal_E"
           style={styles.button}
-          lessonTitle="Ń, Ś, Ź, Ć, DŹ"/>
+          lessonTitle="Ę czy EM?"/>
       </View>
       <View style={styles.container}>
         <SmallRoundButton
@@ -53,7 +53,16 @@ function LessonMainPage({navigation}) {
           lessonType="CH"
           lessonTitle="CH czy H?"/>
       </View>
-            <Image source={stars} />
+      <View style={styles.container}>
+        <SmallRoundButton
+          navigation={navigation}
+          onPress={() => navigation.navigate('Soft')}
+          style={styles.button}
+          lessonType="Soft"
+          style={styles.button}
+          lessonTitle="Ń, Ś, Ź, Ć, DŹ"/>
+      </View>
+      <Image source={stars} />
 
     </View>
   );

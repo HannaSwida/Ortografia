@@ -10,6 +10,7 @@ import RZ from "./Pages/Lessons/RZ/RZ.js";
 import SZ from "./Pages/Lessons/SZ/SZ.js";
 import CH from "./Pages/Lessons/CH/CH.js";
 import Nasal from "./Pages/Lessons/Nasal/Nasal.js";
+import Nasal_E from "./Pages/Lessons/Nasal_E/Nasal_E.js";
 import Soft from "./Pages/Lessons/Soft/Soft.js";
 import U from "./Pages/Lessons/U/U.js";
 import Logo from './assets/LOGO.png'
@@ -67,6 +68,11 @@ function NasalScreen({navigation}) {
     <Nasal navigation={navigation}/>
   );
 }
+function NasalEScreen({navigation}) {
+  return (
+    <Nasal_E navigation={navigation}/>
+  );
+}
 function CHScreen({navigation}) {
   return (
     <CH navigation={navigation}/>
@@ -101,6 +107,7 @@ function App() {
         <Stack.Screen name="RZ" component={RZScreen} />
         <Stack.Screen name="SZ" component={SZScreen} />
         <Stack.Screen name="Nasal" component={NasalScreen} />
+        <Stack.Screen name="Nasal_E" component={NasalEScreen} />
         <Stack.Screen name="Soft" component={SoftScreen} />
         <Stack.Screen name="U" component={UScreen} />
         <Stack.Screen name="CH" component={CHScreen} />

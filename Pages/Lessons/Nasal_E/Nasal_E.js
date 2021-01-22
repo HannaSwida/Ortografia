@@ -8,7 +8,7 @@ import BigRoundButton from "../../../Components/BigRoundButton";
 //ADAM: dla kazdego sz czy z etc kopiuj to we własnych folderach, to np jest w RZ. kazdy folder musi miec oddzielnie swoje
 //rules
 
-function Nasal({navigation}) {
+function Nasal_E({navigation}) {
   return (
     <View style={styles.container}>
       <Rules/>
@@ -17,11 +17,11 @@ function Nasal({navigation}) {
         style={styles.button}
         lessonType="PickAnswer"
         lessonTitle="Sprawdź wiedzę!"
-        rules ="Ą czy OM?"
-        word= "Idę drogą"
-        hiddenWord="Idę drog_"
-        badAns = "om"
-        goodAns = "ą"
+        rules ="Ę czy EM?"
+        word= "Kupuję masło"
+        hiddenWord="Kupuj_ masło"
+        badAns = "em"
+        goodAns = "ę"
       />
     </View>
   );
@@ -51,4 +51,4 @@ const styles = StyleSheet.create({
   }
 );
 
-export default Nasal;
+export default Nasal_E;

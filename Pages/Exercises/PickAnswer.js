@@ -23,10 +23,10 @@ function PickAnswer({navigation, route}) {
         <Text style={styles.correctAns}>Brawo, to dobra odpowiedź!</Text>
         <BigRoundButton
           navigation={navigation}
-          onPress={() => navigation.navigate('RZ')}
+          onPress={() => navigation.navigate('Lesson')}
           style={styles.button}
-          lessonType="PickAnswer"
-          lessonTitle="Sprawdź wiedzę!"
+          lessonType="Lesson"
+          lessonTitle="Wróć do lekcji"
           rules="Rz czy ż?"
           word="Rycefsdfdsfsdrz"
           hiddenWord="Rsdfsfyce_"

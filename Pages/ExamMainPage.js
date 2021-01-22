@@ -36,27 +36,29 @@ function ExamMainPage({navigation}) {
         />
       </View>
       <View style={styles.container}>
-        <BigRoundButton
-          navigation={navigation}
-          style={styles.button}
-          lessonType="PickAnswer"
-          lessonTitle="ON, EN czy Ą, Ę?"
-          rules="ON, EN czy Ą, Ę?"
-          word="Mądry"
-          hiddenWord="M_dry"
-          badAns="ON"
-          goodAns="Ą"
-        /><BigRoundButton
+      <BigRoundButton
         navigation={navigation}
         style={styles.button}
         lessonType="PickAnswer"
-        lessonTitle="Ń, Ś, Ź, Ć czy DŹ?"
-        rules="Ń, Ś, Ź, Ć czy DŹ?"
-        word="Ślimak"
-        hiddenWord="_limak"
-        badAns="Ź"
-        goodAns="Ś"
-      /></View>
+        lessonTitle="Ą czy om?"
+        rules ="Ą czy om"
+        word= "Przyglądam się książkom"
+        hiddenWord="Przyglądam się książk_"
+        badAns = "ą"
+        goodAns = "om"
+      />
+        <BigRoundButton
+        navigation={navigation}
+        style={styles.button}
+        lessonType="PickAnswer"
+        lessonTitle="Ę czy en/em?"
+        rules ="Ę czy em"
+        word= "Rozumiem"
+        hiddenWord="Rozumi_"
+        badAns = "ę"
+        goodAns = "em"
+      />
+      </View>
       <View style={styles.container}>
         <BigRoundButton
           navigation={navigation}
