@@ -17,11 +17,11 @@ function U({navigation}) {
         style={styles.button}
         lessonType="PickAnswer"
         lessonTitle="Sprawdź wiedzę!"
-        rules ="Rz czy ż?"
-        word= "Rycerz"
-        hiddenWord="Ryce_"
-        badAns = "ż"
-        goodAns = "rz"
+        rules ="U czy Ó?"
+        word= "Mrówka"
+        hiddenWord="Mr_wka"
+        badAns = "u"
+        goodAns = "ó"
       />
     </View>
   );

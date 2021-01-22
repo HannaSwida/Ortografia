@@ -10,20 +10,18 @@ function Rules() {
       <Text
         style={styles.title}>RZ czy Ż?</Text>
       <Text
-        style={styles.subtitle}>Kiedy piszemy RZ:</Text>
+        style={styles.subtitle}>Kiedy piszemy U:</Text>
       <Text style={styles.text}>
-        >W wyrazach wymienia się na "r",{"\n"}
-        >Rz piszemy w zakończeniach wyrazów: -arz, -erz (mierz mistrz){"\n"}
-        >Rz piszemy po spółgłoskach: b, p, d, t, g, k, ch, j, w{"\n"}
+        >W czasownikach kończących się na -uć: czuć, kłuć, snuć{"\n"}
+        >R końcówkach: -un, -unek, -uszka, -uch, -us, -usia: opiekun, pakunek, poduszka, łańcuch, mamusia{"\n"}
+        >W czasownikach liczby pojednyczej kończących się na -uję/-ujesz/-uje: kupuję, szanujesz, maluje
       </Text>
       <Text
-        style={styles.subtitle}>Kiedy piszemy Ż:</Text>
+        style={styles.subtitle}>Kiedy piszemy Ó:</Text>
       <Text style={styles.text}>
-        >Ż piszemy po literach: l, ł, r, n,,{"\n"}
-        >Ż piszemy, gdy wymienia się w innych formach tego samego wyrazu lub w innych wyrazach na: g, dz, h, z, ź, s,
-        np.:{"\n"}
-        książka - księga,{"\n"}
-        wstążka - wstęga,{"\n"}
+        >Gdy wymienia się na o, a, e: stół - stoły, skrót - skracać, siódmy - siedem{"\n"}
+        >W końcówkach: -ów, -ówka, -ówna: krzyżówka, końcówka, Kraków{"\n"}
+        >Wyjątek: skuwka, zasuwka, wsuwka{"\n"}
       </Text>
     </View>
   );
