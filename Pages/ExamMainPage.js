@@ -44,8 +44,8 @@ function ExamMainPage({navigation}) {
         rules ="Ą czy om"
         word= "Przyglądam się książkom"
         hiddenWord="Przyglądam się książk_"
-        badAns = "ą"
-        goodAns = "om"
+        badAns = "om"
+        goodAns = "ą"
       />
         <BigRoundButton
         navigation={navigation}
