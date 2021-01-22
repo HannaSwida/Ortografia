@@ -1,7 +1,8 @@
 import * as React from 'react';
-import {Button, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {Button, Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import SmallRoundButton from "../Components/SmallRoundButton";
 import BigRoundButton from "../Components/BigRoundButton";
+import rainbow from "../assets/rainbow.png";
 
 //spr debugger na chacie
 //ADAM : ZAMIEN WSYSTKIE SMALL ROUND NA KOPIE BIG ROUND BUTTON. SKOPIUJ JE Z np. dla testu rz czy z
@@ -9,61 +10,78 @@ import BigRoundButton from "../Components/BigRoundButton";
 function ExamMainPage({navigation}) {
   return (
     <View style={styles.main}>
-      <Text style={styles.title}>Wybierz test!</Text>
+      <Text style={styles.title}>Sprawdź wiedzę!</Text>
+      <View style={styles.container}>
+        <BigRoundButton
+          navigation={navigation}
+          style={styles.button}
+          lessonType="PickAnswer"
+          lessonTitle="Sprawdź wiedzę!"
+          rules="Rz czy ż?"
+          word="Rycerz"
+          hiddenWord="Ryce_"
+          badAns="ż"
+          goodAns="rz"
+        />
+        <BigRoundButton
+        navigation={navigation}
+        style={styles.button}
+        lessonType="PickAnswer"
+        lessonTitle="Sprawdź wiedzę!"
+        rules ="SZ czy RZ?"
+        word= "Krzak"
+        hiddenWord="K_ak"
+        badAns = "SZ"
+        goodAns = "RZ"
+      />
+      </View>
       <View style={styles.container}>
          <BigRoundButton
         navigation={navigation}
         style={styles.button}
         lessonType="PickAnswer"
-        lessonTitle="Rz czy ż?"
-        rules ="Rz czy ż?"
-        word= "Rycerz"
-        hiddenWord="Ryce_"
-        badAns = "ż"
-        goodAns = "rz"
-      />
-                <BigRoundButton
+        lessonTitle="Sprawdź wiedzę!"
+        rules ="ON, EN czy Ą, Ę??"
+        word= "Mądry"
+        hiddenWord="M_dry"
+        badAns = "ON"
+        goodAns = "Ą"
+      /> <BigRoundButton
         navigation={navigation}
         style={styles.button}
         lessonType="PickAnswer"
-        lessonTitle="Sz czy Ż?"
-        rules ="Rz czy ż?"
-        word= "Rycerz"
-        hiddenWord="Ryce_"
-        badAns = "ż"
-        goodAns = "rz"
+        lessonTitle="Sprawdź wiedzę!"
+        rules ="Ń, Ś, Ź, Ć czy DŹ?"
+        word= "Ślimak"
+        hiddenWord="_limak"
+        badAns = "Ź"
+        goodAns = "Ś"
       />
       </View>
       <View style={styles.container}>
-        <SmallRoundButton
-          navigation={navigation}
-          style={styles.button}
-          lessonTitle="ON, EN czy Ą, Ę?"/>
-        <SmallRoundButton
-          navigation={navigation}
-          style={styles.button}
-          lessonTitle="NI czy Ń?"/>
+         <BigRoundButton
+        navigation={navigation}
+        style={styles.button}
+        lessonType="PickAnswer"
+        lessonTitle="Sprawdź wiedzę!"
+        rules ="U czu Ó?"
+        word= "Miód"
+        hiddenWord="Mi_d"
+        badAns = "U"
+        goodAns = "Ó"
+      /> <BigRoundButton
+        navigation={navigation}
+        style={styles.button}
+        lessonType="PickAnswer"
+        lessonTitle="Sprawdź wiedzę!"
+        rules ="CH czy H?"
+        word= "Huśtawka"
+        hiddenWord="_uśtawka"
+        badAns = "CH"
+        goodAns = "H"
+      />
       </View>
-      <View style={styles.container}>
-        <SmallRoundButton
-          navigation={navigation}
-          style={styles.button}
-          lessonTitle="CH czy H?"/>
-        <SmallRoundButton
-          navigation={navigation}
-          style={styles.button}
-          lessonTitle="CI czy Ć"/>
-      </View>
-      <View style={styles.container}>
-        <SmallRoundButton
-          navigation={navigation}
-          style={styles.button}
-          lessonTitle="SI czy Ś"/>
-        <SmallRoundButton
-          navigation={navigation}
-          style={styles.button}
-          lessonTitle="Inne"/>
-      </View>
+      <Image source={rainbow}/>
     </View>
   );
 }
