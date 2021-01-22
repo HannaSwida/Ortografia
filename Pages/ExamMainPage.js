@@ -59,10 +59,17 @@ function ExamMainPage({navigation}) {
       />
       </View>
       <View style={styles.container}>
-        <SmallRoundButton
-          navigation={navigation}
-          style={styles.button}
-          lessonTitle="CH czy H?"/>
+      <BigRoundButton
+        navigation={navigation}
+        style={styles.button}
+        lessonType="PickAnswer"
+        lessonTitle="Ń, Ś, Ć, Ź, Dź"
+        rules ="Dź czy dzi?"
+        word= "dziwny"
+        hiddenWord="_wny"
+        badAns = "dź"
+        goodAns = "dzi"
+      />
         <SmallRoundButton
           navigation={navigation}
           style={styles.button}
