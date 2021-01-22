@@ -17,11 +17,11 @@ function SZ({navigation}) {
         style={styles.button}
         lessonType="PickAnswer"
         lessonTitle="Sprawdź wiedzę!"
-        rules ="Rz czy ż?"
-        word= "Rycerz"
-        hiddenWord="Ryce_"
-        badAns = "ż"
-        goodAns = "rz"
+        rules ="Rz czy sz?"
+        word= "Pszenica"
+        hiddenWord="P_enica"
+        badAns = "rz"
+        goodAns = "sz"
       />
     </View>
   );
