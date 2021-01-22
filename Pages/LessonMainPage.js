@@ -29,7 +29,7 @@ function LessonMainPage({navigation}) {
           style={styles.button}
           lessonType="Nasal"
           style={styles.button}
-          lessonTitle="ON, EN czy Ą, Ę?"/>
+          lessonTitle="Ą czy OM?"/>
         <SmallRoundButton
           navigation={navigation}
           onPress={() => navigation.navigate('Soft')}

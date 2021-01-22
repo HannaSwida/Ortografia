@@ -26,7 +26,7 @@ function ExamMainPage({navigation}) {
         navigation={navigation}
         style={styles.button}
         lessonType="PickAnswer"
-        lessonTitle="Sz czy Ż?"
+        lessonTitle="Sz czy rz?"
         rules ="Rz czy ż?"
         word= "Rycerz"
         hiddenWord="Ryce_"
@@ -35,10 +35,17 @@ function ExamMainPage({navigation}) {
       />
       </View>
       <View style={styles.container}>
-        <SmallRoundButton
-          navigation={navigation}
-          style={styles.button}
-          lessonTitle="ON, EN czy Ą, Ę?"/>
+      <BigRoundButton
+        navigation={navigation}
+        style={styles.button}
+        lessonType="PickAnswer"
+        lessonTitle="Ą czy om?"
+        rules ="Ą czy om"
+        word= "Przyglądam się książkom"
+        hiddenWord="Przyglądam się książk_"
+        badAns = "ą"
+        goodAns = "om"
+      />
         <SmallRoundButton
           navigation={navigation}
           style={styles.button}
